@@ -1,0 +1,106 @@
+body {
+    background-color: #dfdfdf;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 810px;
+}
+.container .page {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.container .page .row {
+    background-color: rgb(133, 133, 133);
+    width: 270px;
+    height: 420px;
+}
+.container .page .row img {
+    padding: 30px;
+}
+.container .page .row:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: hsl(31, 77%, 52%);
+}
+.container .page .row:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.container .page .row:last-child  {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container .row .text {
+    width: 100%;
+}
+.container .row .text h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding: 0 30px 20px;
+}
+.container .row .text p {
+    width: 88%;
+    padding: 30px;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+.container .row .btn {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.container .row .btn button {
+    background-color: hsl(0, 0%, 95%);
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+.container .row:first-child .btn button {
+    color: hsl(31, 77%, 52%);
+}
+.container .row:nth-child(2) .btn button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container .row:last-child .btn button {
+    color: hsl(179, 100%, 13%);
+}
+@media (max-width: 767px) {
+    .container {
+        height: auto;
+    }
+    .container .page {
+        flex-direction: column;
+        padding: 50px 80px;
+    }
+    .container .page .row {
+        width: 100%;
+    }
+    .container .page .row:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    .container .page .row:last-child  {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+@media (max-width: 500px) {
+    .container .page {
+        padding: 50px 15px;
+    }
+}
+
