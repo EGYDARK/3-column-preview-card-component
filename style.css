@@ -1,5 +1,8 @@
 body {
     background-color: #dfdfdf;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -43,17 +46,18 @@ body {
 }
 .container .row .text h2 {
     color: hsl(0, 0%, 95%);
-    font-family: sans-serif;
     font-weight: 700;
-    letter-spacing: -1px;
     padding: 0 30px 20px;
+    margin-left: 5px;
+    font-size: 30px;
 }
 .container .row .text p {
-    width: 88%;
+    width: 95%;
     padding: 30px;
     line-height: 1.6;
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .container .row .btn {
     margin-left: 20px;
@@ -65,6 +69,8 @@ body {
     padding: 10px 30px;
     border-radius: 30px;
     border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    transition: 0.3s;
 }
 .container .row:first-child .btn button {
     color: hsl(31, 77%, 52%);
@@ -76,6 +82,10 @@ body {
 .container .row:last-child .btn button {
     color: hsl(179, 100%, 13%);
 }
+.container .row .btn button:hover {
+    background-color: transparent;
+    color: #fff;
+}  
 @media (max-width: 767px) {
     .container {
         height: auto;
